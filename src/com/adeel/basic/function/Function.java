@@ -11,7 +11,7 @@ public class Function {
         String welcomeMsg = greet(name);
         System.out.println(welcomeMsg);
     }
-    public static <a> String greet(String InputName){
+    public static String greet(String InputName){
         String Msg = "Hello " + InputName + ", Welcome!";
         return Msg;
     }
