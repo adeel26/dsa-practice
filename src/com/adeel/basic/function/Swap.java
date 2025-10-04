@@ -6,7 +6,7 @@ public class Swap {
         int b = 20;
 
         // Swap numbers
-        swapM(a, b); 
+        swapM(a, b);
 
     }
 
