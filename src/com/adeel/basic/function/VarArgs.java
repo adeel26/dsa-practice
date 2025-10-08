@@ -16,6 +16,19 @@ public class VarArgs {
 // int ...adeel --> is an array of integer at backend
 // String ...adeel --> is an array of String at backend
 
+
+/*
+Multiple type arguments can also be used like
+        public static void main(String[] args)
+        {
+            multipleTypeArgs(00, 7, "James", "Bond");
+        }
+         static void multipleTypeArgs(int a, int b, String ...iqbal)
+         {
+        }
+ */
+
+
 /*
 In Memory
 
