@@ -1,0 +1,74 @@
+Java Method Parameter Behavior (Pass-by-Value)
+
+Java is always pass-by-value — meaning it passes a copy of the variable to the method.
+But how that copy behaves depends on whether it’s a primitive or a reference type.
+
+🔹 1. Primitive Types (int, double, boolean, etc.)
+
+Java passes a copy of the value.
+
+Changing it inside a method does NOT affect the original variable.
+
+void changeValue(int x) {
+    x = 10;
+}
+
+int num = 5;
+changeValue(num);
+System.out.println(num); // still 5 ❌
+
+
+🧩 Why?
+Because x got its own copy — changing it doesn’t touch num.
+
+🔹 2. Reference Types (Arrays, Objects, etc.)
+
+Java passes a copy of the reference (address).
+
+So inside the method, you can modify the object’s contents,
+but not replace the reference itself.
+
+✅ Example (array)
+void modifyArray(int[] arr) {
+    arr[0] = 100; // modifies original array
+}
+
+int[] nums = {1, 2, 3};
+modifyArray(nums);
+System.out.println(nums[0]); // 100 ✅
+
+
+But if you reassign the array:
+
+void modifyArray(int[] arr) {
+    arr = new int[]{9, 9, 9}; // new reference, doesn't affect original
+}
+
+
+→ The original array stays unchanged.
+
+🔹 3. Strings
+
+String is a reference type, but immutable (cannot be changed after creation).
+
+So if you try to “modify” a string, Java actually creates a new object.
+
+void changeString(String s) {
+    s = s + " World"; // new String created
+}
+
+String text = "Hello";
+changeString(text);
+System.out.println(text); // still "Hello" ❌
+
+
+✅ To update it, you must assign back:
+
+text = text + " World";
+
+🗝️ Key Takeaways
+Type	What’s Passed	Can Modify Original?	Notes
+Primitive	Copy of value	❌ No	Independent copy
+Array	Copy of reference	✅ Yes (elements)	Cannot reassign reference
+Object	Copy of reference	✅ Yes (fields)	Similar to array
+String	Copy of reference	❌ No	Immutable (acts like primitive)
