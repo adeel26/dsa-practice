@@ -53,7 +53,10 @@ You only know the size, not values yet	new int[5] ✅
 /*
 Memory Concept Recap:
 int arr3; // Declaration of array. arr3 is getting defined in stack.
+
 arr3 = new int[5]; // Initialization. Object is created in heap.
+This is dynamic memory allocation as memory is allocated at runtime.
+
 In Java:
 Stack → stores variable references (like arr1, arr2)
 Heap → stores actual objects, such as arrays or class instances
