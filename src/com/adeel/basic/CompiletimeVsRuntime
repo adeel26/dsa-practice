@@ -1,0 +1,75 @@
+Java — Compile-time vs Runtime
+Phase	Description
+Compile-time-->	When Java code (.java) is checked and converted into bytecode (.class) by the Java compiler (javac).
+Runtime-->	When the JVM (Java Virtual Machine) executes that bytecode line by line.
+
+⚙️ At Compile-Time
+Things checked or processed before execution starts.
+✅ Compile-Time Activities:
+
+1. Syntax checking
+Missing semicolons, braces, or invalid keywords.
+Example:
+int a = ;  // ❌ compile-time error
+
+2. Type checking
+Ensures correct data types.
+Example:
+int x = "abc";  // ❌ incompatible types
+
+3. Variable declaration validation
+Must be declared before use.
+Example:
+System.out.println(num);  // ❌ num not declared
+
+4. Method existence check
+Verifies that called methods exist with correct parameters.
+Example:
+myMethod(10);  // ❌ if method not defined
+
+5. Overloading resolution
+Decides which overloaded method to call based on parameter types.
+Example:
+add(5, 10);  // chooses correct overloaded version at compile time
+
+6. Imports and package validation
+Access modifier rules
+Private/public/protected violations caught here.
+
+
+🕒 At Runtime
+These happen when the program actually runs in the JVM.
+✅ Runtime Activities:
+
+1. Object creation
+new keyword allocates memory on the heap.
+Example:
+MyClass obj = new MyClass();  // created at runtime
+
+2. Dynamic memory allocation
+Arrays, objects, etc., occupy memory when the program executes.
+
+3. Method execution
+Actual logic runs here.
+
+4. Polymorphism (Dynamic binding)
+The JVM decides which overridden method to call.
+Example:
+Animal a = new Dog();
+a.speak();  // Dog's speak() runs at runtime ✅
+
+5. Exception handling
+Example:
+int x = 5 / 0;  // ❌ ArithmeticException at runtime
+
+6. Type casting (for objects)
+If invalid, throws ClassCastException at runtime.
+
+7. Input/Output operations
+Reading files, user input, network operations.
+
+8. Garbage Collection
+Unused objects are cleaned up while the JVM runs.
+
+
+
