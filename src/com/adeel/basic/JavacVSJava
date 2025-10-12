@@ -1,0 +1,41 @@
+Compiler
+Translates the entire source code into machine code at once.
+Produces an executable file (like .exe or .class).
+Runs faster after compilation because translation is already done.
+Shows all errors after compiling.
+Examples: C, C++, Java (bytecode level)
+
+Interpreter
+Translates and executes line by line.
+Does not produce a separate file — runs directly.
+Runs slower, since translation happens during execution.
+Stops at the first error it finds.
+Examples: Python, JavaScript, Ruby
+
+🧠 In short:
+Compiler = Translate first, run later.
+Interpreter = Translate and run together.
+---------------------------------------------------------------------------
+
+Java’s Case
+Uses both:
+javac (compiler) → Converts code to bytecode (.class file).
+java (interpreter/JVM) → Runs the bytecode line by line on the Java Virtual Machine.
+
+Here’s the breakdown:
+
+javac → Java Compiler
+Converts your .java source file into bytecode (.class file).
+Example:
+javac MyProgram.java
+→ produces MyProgram.class.
+
+java → Java Interpreter / JVM launcher
+Runs the compiled bytecode using the Java Virtual Machine (JVM).
+Example:
+java MyProgram
+→ runs the MyProgram.class file.
+
+
+So:
+🧠 .java → (compiled by javac) → .class → (executed by java)
