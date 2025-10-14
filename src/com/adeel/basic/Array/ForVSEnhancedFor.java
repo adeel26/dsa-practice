@@ -30,7 +30,7 @@ public class ForVSEnhancedFor {
             System.out.println("Index " + index + " = " + i);
             index++;
         }
-
     }
 }
 
+// System.out.println(arr[6]); index out of bound error
