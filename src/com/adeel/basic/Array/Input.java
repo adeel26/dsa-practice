@@ -1,5 +1,6 @@
 package com.adeel.basic.Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Input {
@@ -35,5 +36,12 @@ public class Input {
             System.out.println(i + "");
         }
 
+        // array of objects
+        String [] names = new String[5];
+        for ( int i = 0; i < names.length; i++){
+            System.out.print("Enter students names: ");
+            names[i] = input.next();
+        }
+        System.out.println("\n" + Arrays.toString(names));
     }
 }
