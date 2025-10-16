@@ -18,6 +18,15 @@ public class MultiDimArraySimple {
             }
             System.out.println();
         }
+
+        // Enhanced for loop
+        System.out.println("\nEnhanced for loop");
+        for(String[] foods : Groceries){
+            for(String food : foods){
+                System.out.print(food + " ");
+            }
+            System.out.println();
+        }
     }
 }
 
