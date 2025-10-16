@@ -43,5 +43,13 @@ public class MultiDimension {
             System.out.println(Arrays.toString(arr[row]));
         }
 
+        // Output via Enhanced for loop
+        // When using enhanced for loop:
+        // The variable type depends on what each element in the array actually is.
+        for (int[] element : arr2D){ // in arr2D, each element is type integer array
+            System.out.println(Arrays.toString(element));
+        }
+        
+
     }
 }
