@@ -49,7 +49,7 @@ public class MultiDimension {
         for (int[] element : arr2D){ // in arr2D, each element is type integer array
             System.out.println(Arrays.toString(element));
         }
-        
+
 
     }
 }
