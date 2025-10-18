@@ -12,6 +12,14 @@ public class MultiDimArraySimple {
 
         String[][] Groceries = {fruits, vegetables, meat};
 
+        /*
+            Prefer to do like this
+            String[][] Groceries = {{"Apple", "Banana", "Orange"},
+                                    {"Potato", "Onion", "Carrot"},
+                                    {"Chicken", "Beef", "Fish", "Goat"}
+                                    };
+         */
+
         for (int row=0; row < Groceries.length; row++){
             for (int col = 0; col < Groceries[row].length ; col++) {
                 System.out.print(Groceries[row][col] + " ");
