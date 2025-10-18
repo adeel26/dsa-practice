@@ -18,6 +18,8 @@ public class MultiDimArraySimple {
                                     {"Potato", "Onion", "Carrot"},
                                     {"Chicken", "Beef", "Fish", "Goat"}
                                     };
+            to change data
+            Groceries[0][1] = "Grapes" // Replaces Banana
          */
 
         for (int row=0; row < Groceries.length; row++){
