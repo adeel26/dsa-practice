@@ -1,5 +1,6 @@
 package com.adeel.basic.Array;
 
+import javax.xml.transform.Source;
 import java.util.ArrayList;
 
 public class ArrayListExample {
@@ -25,6 +26,9 @@ public class ArrayListExample {
         // Remove any index
         list.remove(2);
         System.out.println(list);
+
+        // get item at any inde
+        System.out.println(list.get(0));
     }
 }
 
