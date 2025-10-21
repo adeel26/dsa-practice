@@ -15,6 +15,11 @@ public class ArrayListExample2 {
 
         System.out.println(list);
 
+        // get item at any index
+        for (int i=0; i<5; i++){
+            System.out.println(list.get(i));
+        }
+
 
     }
 }
