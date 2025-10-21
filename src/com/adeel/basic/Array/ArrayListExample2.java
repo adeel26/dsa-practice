@@ -10,6 +10,7 @@ public class ArrayListExample2 {
 
         // Taking input from user
         for (int i=0; i<5; i++){
+            System.out.print("Enter number " + (i + 1) + ": ");
             list.add(input.nextInt());
         }
 
@@ -17,7 +18,7 @@ public class ArrayListExample2 {
 
         // get item at any index
         for (int i=0; i<5; i++){
-            System.out.println(list.get(i));
+            System.out.println(list.get(i)); // pass index here, list[index] syntax will not work here
         }
 
 
