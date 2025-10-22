@@ -3,7 +3,7 @@ package com.adeel.basic.Array;
 
 public class Q2_MaxItem {
     public static void main(String[] args) {
-        int[] arr = {1, 3, 23, 9, 18};
+        int[] arr = {1, 3, 18, 9, 23};
 
         System.out.println(Max(arr));
 
@@ -23,7 +23,7 @@ public class Q2_MaxItem {
 
     // Max value from index 1 to 3, Range question
     static int MaxInRange(int[] array, int start, int end){
-        int max = array[0];
+        int max = array[start];
         for (int i = start; i <= end; i++) {
             if(array[i] > max){
                 max = array[i];
