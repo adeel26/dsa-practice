@@ -6,12 +6,26 @@ public class Q2_MaxItem {
         int[] arr = {1, 3, 23, 9, 18};
 
         System.out.println(Max(arr));
+
+        System.out.println(MaxInRange(arr, 1, 3));
     }
 
+    // Imagine array is not empty
     static int Max(int[] array){
-        int max = 0;
+        int max = array[0];
         for (int i = 0; i < array.length; i++) {
-            if(max < array[i]){
+            if(array[i] > max){
+                max = array[i];
+            }
+        }
+        return max;
+    }
+
+    // Max value from index 1 to 3, Range question
+    static int MaxInRange(int[] array, int start, int end){
+        int max = array[0];
+        for (int i = start; i <= end; i++) {
+            if(array[i] > max){
                 max = array[i];
             }
         }
