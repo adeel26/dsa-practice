@@ -2,7 +2,7 @@ package com.adeel.Questions;
 
 import java.util.Arrays;
 // 1929. Concatenation of Array
-public class LeetCodeArray2 {
+public class Q_Array2 {
     public static void main(String[] args) {
         int[] number = {1, 2, 1};
         System.out.println(Arrays.toString(getConcatenation(number)));

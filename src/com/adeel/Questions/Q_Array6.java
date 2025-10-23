@@ -3,7 +3,7 @@ package com.adeel.Questions;
 import java.util.ArrayList;
 import java.util.List;
 // 1431. Kids With the Greatest Number of Candies
-public class LeetCodeArray6 {
+public class Q_Array6 {
     public static void main(String[] args) {
         int[] candies = {2,3,5,1,3};
         int extraCandies = 3;

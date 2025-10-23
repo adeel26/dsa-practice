@@ -2,7 +2,7 @@ package com.adeel.Questions;
 
 import java.util.Arrays;
 // 1470. Shuffle the Array
-public class LeetCodeArray5 {
+public class Q_Array5 {
     public static void main(String[] args) {
         int[] number = {1,2,3,1,2,3,};
         int halfArray = 3;

@@ -3,7 +3,7 @@ package com.adeel.Questions;
 import java.util.Arrays;
 
 //1672. Richest Customer Wealth
-public class LeetCodeArray4 {
+public class Q_Array4 {
     public static void main(String[] args) {
         int[][] numbers = {{2,8,7},{7,1,3},{1,9,5}};
         System.out.println(maximumWealth(numbers));

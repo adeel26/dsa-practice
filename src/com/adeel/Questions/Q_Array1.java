@@ -2,7 +2,7 @@ package com.adeel.Questions;
 
 import java.util.Arrays;
 // Build Array from Permutation
-public class LeetCodeArray1 {
+public class Q_Array1 {
     public static void main(String[] args) {
         int[] number = {0, 2, 1, 5, 3,4};
 
