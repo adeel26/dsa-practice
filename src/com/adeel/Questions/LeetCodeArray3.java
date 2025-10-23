@@ -1,7 +1,7 @@
 package com.adeel.Questions;
 
 import java.util.Arrays;
-
+// Running Sum of 1d Array
 public class LeetCodeArray3 {
     public static void main(String[] args) {
         int[] number = {3, 1, 2, 10, 1};
