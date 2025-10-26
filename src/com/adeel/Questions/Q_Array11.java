@@ -1,5 +1,6 @@
 package com.adeel.Questions;
 
+//Count Items Matching a Rule
 import java.util.ArrayList;
 
 public class Q_Array11 {
