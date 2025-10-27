@@ -1,0 +1,119 @@
+🧩 1. int x = 10;
+✅ Primitive type
+Stored directly in the stack (inside method’s frame).
+No object is created on the heap.
+Super fast, simple.
+
+📍 Example:
+int x = 10;
+
+Stack memory:
+x → 10
+
+🧩 2. Integer y = new Integer(10);
+❌ Always creates a new object in the heap.
+Even if another Integer(10) exists, this makes a fresh one.
+Deprecated (old style).
+y (the reference) sits on stack, pointing to that new heap object.
+
+📍 Memory:
+Stack: y ──► Heap: [Integer object with value 10]
+
+🧩 3. Integer z = Integer.valueOf(10);
+✅ Wrapper class (Integer object), but uses caching for performance.
+Still stored on heap, but may reuse an existing object from the cache pool (for -128 to 127).
+So not every call creates a new one.
+Reference (z) itself is on stack, pointing to heap object.
+
+📍 Memory:
+Stack: z ──► Heap: [shared Integer object with value 10]
+
+-------------------------------------------------------
+
+So if I do Integer z = Integer.valueOf(130); then ?
+
+Integer z1 = Integer.valueOf(130);
+Integer z2 = Integer.valueOf(130);
+System.out.println(z1 == z2);
+
+Output:
+false
+
+Why ❓
+The Integer cache range is from -128 to 127.
+
+Any value outside this range (like 130) creates a new object each time.
+→ So z1 and z2 are different objects on the heap.
+
+📍 Memory view:
+Stack: z1 ──► Heap: [Integer(130)]
+       z2 ──► Heap: [Integer(130)]  ← different object!
+
+
+If you try with a cached value:
+
+Integer a = Integer.valueOf(100);
+Integer b = Integer.valueOf(100);
+System.out.println(a == b);
+
+✅ Output:
+true
+
+So rule of thumb:
+Range	        Behavior
+-128 to 127	    Reuses cached object → == true
+Outside that	Creates new object → == false
+
+
+💡 Note:
+Even though == can be false for large numbers,
+.equals() will always be true because it compares values:
+
+System.out.println(z1.equals(z2)); // true
+
+
+--------------------------------------------
+
+
+💡 1️⃣ Where is the Integer cache stored?
+Yes — it’s stored in the heap, just like the String pool (also heap).
+But:
+String pool → a special memory area inside heap for all string literals.
+Integer cache → a small static array inside the Integer class that holds pre-created Integer objects from -128 to 127.
+
+💡 2️⃣ What happens when you call Integer.valueOf(x)?
+Integer i = Integer.valueOf(100);
+
+JVM checks if 100 is between -128 and 127.
+If yes → returns the existing cached object reference from the IntegerCache array.
+If not → creates a new Integer object in heap and returns it (not stored in cache).
+
+So:
+Range [-128,127]  → from cache
+Outside range     → new object in heap
+
+💡 3️⃣ Does the new object go into the cache?
+❌ No.
+The cache is fixed-size and created once when Integer class loads.
+New objects outside that range are just regular heap objects — they do not get added to the cache.
+
+💡 4️⃣ Visualization
+Heap:
+ ┌──────────────────────────┐
+ │ IntegerCache:            │
+ │ [-128]→ObjA              │
+ │ [-127]→ObjB              │
+ │  ...                     │
+ │ [127] →ObjZ              │
+ │                          │
+ │ New Integer(130) → ObjX  │  ← separate, not cached
+ └──────────────────────────┘
+Stack:
+   i → ObjA
+   j → ObjX
+
+
+
+When the Integer class is loaded by the JVM, it creates and stores all Integer objects from -128 to 127 in memory once.
+These objects live inside a private static array called the IntegerCache.
+
