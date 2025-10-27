@@ -1,4 +1,4 @@
-package com.adeel.Questions;
+package com.adeel.Questions.Array;
 //Find the Highest Altitude
 import java.util.Arrays;
 

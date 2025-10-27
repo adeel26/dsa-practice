@@ -1,4 +1,4 @@
-package com.adeel.Questions;
+package com.adeel.Questions.Array;
 
 import java.util.ArrayList;
 import java.util.List;

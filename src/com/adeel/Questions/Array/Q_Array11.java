@@ -1,4 +1,4 @@
-package com.adeel.Questions;
+package com.adeel.Questions.Array;
 
 //Count Items Matching a Rule
 import java.util.ArrayList;

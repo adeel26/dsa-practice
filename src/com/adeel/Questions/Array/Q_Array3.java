@@ -1,4 +1,4 @@
-package com.adeel.Questions;
+package com.adeel.Questions.Array;
 
 import java.util.Arrays;
 // Running Sum of 1d Array

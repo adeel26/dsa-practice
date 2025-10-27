@@ -1,4 +1,4 @@
-package com.adeel.Questions;
+package com.adeel.Questions.Array;
 
 import java.util.Arrays;
 // 1470. Shuffle the Array

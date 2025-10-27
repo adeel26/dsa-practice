@@ -1,4 +1,4 @@
-package com.adeel.Questions;
+package com.adeel.Questions.Array;
 /*
 Number of Good Pairs
 Given an array of integers nums, return the number of good pairs.
