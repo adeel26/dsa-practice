@@ -15,12 +15,8 @@ public class Q_Strings6 {
         System.out.println(sentence1);
         System.out.println(sentence2);
 
-        if(sentence1.equals(sentence2)){
-            return true;
-        }else
-        {
-            return false;
-        }
+        return sentence1.equals(sentence2);
+
 
     }
 }
