@@ -49,3 +49,8 @@ Default constructor:
 Note: It is not necessary to write a constructor for a class because the Java compiler automatically creates a default constructor
 (a constructor with no arguments) if your class doesn’t have any.
  */
+
+
+// Private constructor is on another file
+
+// Notes from www.geeksforgeeks.org/java/constructors-in-java/
