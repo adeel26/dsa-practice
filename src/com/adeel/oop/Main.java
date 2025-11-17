@@ -27,3 +27,5 @@ class Car {
         System.out.println("Car is starting...");
     }
 }
+
+// new word for creating object dynamically allocates memory and return a reference variable to it.
