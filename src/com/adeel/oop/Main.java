@@ -8,6 +8,13 @@ public class Main {
 
         myCar.stat();
 
+        //GameClass
+        GamesClass game1 = new GamesClass();
+        game1.name = "IGI";
+        game1.genre = "Action";
+
+        game1.play();
+
     }
 }
 
