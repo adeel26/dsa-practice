@@ -10,6 +10,10 @@ public class TypesOfConstructor {
         System.out.println(st2.name);
         System.out.println(st2.age);
 
+        Students st3 = new Students(st2);
+        System.out.println(st3.name);
+        System.out.println(st3.age);
+
     }
 }
 
@@ -32,6 +36,12 @@ class Students{
         this.age = age;
     }
 
+    // Copy Constructor
+    Students(Students other) {
+        System.out.println("Copy constructor called");
+        this.name = other.name;
+        this.age = other.age;
+    }
 }
 
 /*
