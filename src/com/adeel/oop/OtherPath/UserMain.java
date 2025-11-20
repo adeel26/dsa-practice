@@ -10,6 +10,7 @@ public class UserMain {
         User user1 = new User("John");
         User user2 = new User("Batista", "batista@yahoo.com");
         User user3 = new User("Shawn", "shawn@yahoo.com", 30);
+        User user4 = new User();
 
         System.out.println(user1.username);
         System.out.println(user1.email);
@@ -22,6 +23,10 @@ public class UserMain {
         System.out.println(user3.username);
         System.out.println(user3.email);
         System.out.println(user3.age);
+
+        System.out.println(user4.username);
+        System.out.println(user4.email);
+        System.out.println(user4.age);
 
 
     }
