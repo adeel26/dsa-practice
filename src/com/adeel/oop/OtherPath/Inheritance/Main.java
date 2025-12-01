@@ -1,13 +1,13 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Inheritance;
 
-public class InheritanceMain {
+public class Main {
     public static void main(String[] args) {
         // Inheritance = One class inherits the attributes and methods
         //               from another class.
         //               Child <- Parent <- Grandparent
 
-        InheritanceDog dog = new InheritanceDog();
-        InheritanceCat cat = new InheritanceCat();
+        Dog dog = new Dog();
+        Cat cat = new Cat();
 
         // Accessing methods and instance from parent class
         System.out.println(dog.isAlive);
@@ -23,7 +23,7 @@ public class InheritanceMain {
         dog.speak();
         cat.speak();
 
-        InheritancePlant plant = new InheritancePlant();
+        Plant plant = new Plant();
         System.out.println(plant.isAlive);
         plant.photosynthesis();
     }

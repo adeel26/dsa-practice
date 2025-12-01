@@ -1,6 +1,6 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Inheritance;
 
-public class InheritanceDog extends InheritanceAnimal{
+public class Dog extends Animal {
 
     int lives = 1;
 

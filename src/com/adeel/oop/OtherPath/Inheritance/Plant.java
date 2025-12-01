@@ -1,6 +1,6 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Inheritance;
 
-public class InheritancePlant extends InheritanceOrganisim{
+public class Plant extends Organism {
 
     void photosynthesis() {
         System.out.println("The plant absorbs sunlight");
