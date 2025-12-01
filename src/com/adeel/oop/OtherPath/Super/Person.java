@@ -1,10 +1,10 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Super;
 
-public class SuperPerson {
+public class Person {
     String first;
     String last;
 
-    SuperPerson(String first, String last) {
+    Person(String first, String last) {
         this.first = first;
         this.last = last;
     }

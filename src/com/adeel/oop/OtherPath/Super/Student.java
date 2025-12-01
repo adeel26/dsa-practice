@@ -1,9 +1,9 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Super;
 
-public class SuperStudent extends SuperPerson{
+public class Student extends Person {
     double gpa;
 
-    SuperStudent(String first, String last, double gpa) {
+    Student(String first, String last, double gpa) {
         super(first, last);
         this.gpa = gpa;
     }

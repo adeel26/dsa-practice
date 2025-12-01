@@ -1,9 +1,9 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Super;
 
-public class SuperEmployee extends SuperPerson{
+public class Employee extends Person {
     int salary;
 
-    SuperEmployee(String first, String last, int salary) {
+    Employee(String first, String last, int salary) {
         super(first, last);
         this.salary = salary;
     }
