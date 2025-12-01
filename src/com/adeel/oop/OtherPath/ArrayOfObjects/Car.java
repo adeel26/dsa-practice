@@ -1,11 +1,11 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.ArrayOfObjects;
 
-public class ArrayOfObjectsCar {
+public class Car {
     String model;
     String color;
     boolean isRunning;
 
-    public ArrayOfObjectsCar(String model, String color) {
+    public Car(String model, String color) {
         this.model = model;
         this.color = color;
     }
