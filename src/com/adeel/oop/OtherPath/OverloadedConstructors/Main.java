@@ -1,6 +1,6 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.OverloadedConstructors;
 
-public class UserMain {
+public class Main {
     public static void main(String[] args) {
 
         // overload constructors = Allow a class to have multiple constructors
