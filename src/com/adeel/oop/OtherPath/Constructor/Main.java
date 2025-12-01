@@ -1,7 +1,11 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Constructor;
 
-public class StudentMain {
+public class Main {
     public static void main(String[] args) {
+        // Constructor = A special method to initialize objects
+        //               You can pass arguments to a constructor
+        //               and set up initial values
+
         System.out.println("Student Class");
 
         Student student1 = new Student("John", 30, 3.2);

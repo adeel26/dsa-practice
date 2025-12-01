@@ -1,9 +1,6 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Constructor;
 
 public class Student {
-    // Constructor = A special method to initialize objects
-    //               You can pass arguments to a constructor
-    //               and set up initial values
 
     String name;
     int age;
