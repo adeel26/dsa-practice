@@ -1,11 +1,11 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Static;
 
-public class StaticFriend {
+public class Friend {
     String name;
     static int numOfFriends;
 
     // Constructor
-    StaticFriend(String name) {
+    Friend(String name) {
         this.name = name;
         numOfFriends++;
     }

@@ -1,18 +1,18 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Static;
 
-public class StaticFriendMain {
+public class Main {
     public static void main(String[] args) {
         // static = Makes a variable or method belong to class
         //          rather than to any specific object
         //          Commonly used for utility methods or shared resources.
 
-        StaticFriend friend1 = new StaticFriend("John");
-        StaticFriend friend2 = new StaticFriend("Cena");
+        Friend friend1 = new Friend("John");
+        Friend friend2 = new Friend("Cena");
 
         System.out.println(friend1.name);
-        System.out.println(StaticFriend.numOfFriends);
+        System.out.println(Friend.numOfFriends);
 
         // Calling static method
-        StaticFriend.showFriends();
+        Friend.showFriends();
     }
 }
