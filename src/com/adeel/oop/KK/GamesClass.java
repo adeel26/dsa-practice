@@ -1,4 +1,4 @@
-package com.adeel.oop;
+package com.adeel.oop.KK;
 
 public class GamesClass {
     String name;
