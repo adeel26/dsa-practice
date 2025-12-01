@@ -1,12 +1,12 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.ToString;
 
-public class ToStringCar {
+public class Car {
     String make;
     String model;
     int year;
     String color;
 
-    ToStringCar(String make, String model, int year, String color) {
+    Car(String make, String model, int year, String color) {
         this.make = make;
         this.model = model;
         this.year = year;
