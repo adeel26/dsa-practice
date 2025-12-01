@@ -1,6 +1,6 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Abstraction;
 
-public abstract class AbstractionShape {
+public abstract class Shape {
     // Abstract method
     abstract double area();
 

@@ -1,6 +1,6 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Abstraction;
 
-public class AbstractionMain {
+public class Main {
     public static void main(String[] args) {
         // abstract = Used to define abstract classes and methods.
         //            Abstraction is the process of hiding implementation details
@@ -9,9 +9,9 @@ public class AbstractionMain {
         //            Can contain 'abstract' methods (which must be implemented)
         //            Can contain 'concrete' methods (which are inherited)
 
-        AbstractionCircle circle = new AbstractionCircle(5);
-        AbstractionTriangle triangle = new AbstractionTriangle(3,9);
-        AbstractionRectangle rectangle = new AbstractionRectangle(8,12);
+        Circle circle = new Circle(5);
+        Triangle triangle = new Triangle(3,9);
+        Rectangle rectangle = new Rectangle(8,12);
 
         circle.display();
         triangle.display();

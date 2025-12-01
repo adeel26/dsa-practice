@@ -1,10 +1,10 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Abstraction;
 
-public class AbstractionCircle extends AbstractionShape{
+public class Circle extends Shape {
     double radius;
 
     // Constructor
-    AbstractionCircle(double radius) {
+    Circle(double radius) {
         this.radius = radius;
     }
 

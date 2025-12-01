@@ -1,10 +1,10 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Abstraction;
 
-public class AbstractionTriangle extends AbstractionShape{
+public class Triangle extends Shape {
     double base;
     double height;
 
-    AbstractionTriangle(double base, double height) {
+    Triangle(double base, double height) {
         this.base = base;
         this.height = height;
     }
