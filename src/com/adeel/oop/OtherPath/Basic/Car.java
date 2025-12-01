@@ -1,4 +1,4 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Basic;
 
 public class Car {
 

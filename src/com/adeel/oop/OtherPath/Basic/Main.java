@@ -1,6 +1,6 @@
-package com.adeel.oop.OtherPath;
+package com.adeel.oop.OtherPath.Basic;
 
-public class CarMain {
+public class Main {
     public static void main(String[] args) {
         // Object = An entity that holds data (attributes)
         //          and can perform actions (methods)
