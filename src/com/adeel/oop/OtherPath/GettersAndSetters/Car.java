@@ -42,4 +42,28 @@ In Interfaces
 - All methods are implicitly public and abstract (unless marked default or static).
 - You don’t need to write public — but if you omit it, the compiler will still treat it as public.
 Notice: when you implement an interface, the method must be public, because the interface contract is public.
+
+
+✅ Java Access Modifiers (Short & Simple)
+1. public
+Accessible from anywhere (same class, same package, different package, subclasses).
+No restrictions.
+
+2. protected
+Accessible:
+Inside same class
+Inside same package
+In subclasses (even in different packages)
+
+3. default (no keyword)
+Accessible only inside the same package.
+Not visible outside the package.
+Also called package-private.
+
+4. private
+Accessible only inside the same class.
+Not visible in:
+Same package
+Subclasses
+Outside class
  */
