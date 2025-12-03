@@ -1,7 +1,7 @@
 package com.adeel.oop.OtherPath.GettersAndSetters;
 
 public class Car {
-    private String model;
+    private final String model;
     private String color;
     private int price;
 
@@ -28,7 +28,12 @@ public class Car {
         this.color = color;
     }
     void setPrice(int price) {
-        this.price = price;
+        if(price < 0) {
+            System.out.println("Price can't be less than zero");
+        }else {
+            this.price = price;
+        }
+
     }
 }
 
