@@ -66,4 +66,43 @@ Not visible in:
 Same package
 Subclasses
 Outside class
+
+------------------------------------------------------------
+
+Final:
+final is not an access modifier — it’s a non-access modifier in Java.
+Here is the short and clear meaning of final:
+
+✅ Meaning of final in Java (Very Short Explanation)
+final means “cannot be changed later”.
+
+But what it prevents from changing depends on where you use it:
+
+1️⃣ final variable → value cannot change (constant)
+
+final int x = 10;
+x = 20;  // ❌ ERROR: cannot change
+
+If a variable is final, you must assign value one time only.
+
+2️⃣ final method → cannot be overridden
+
+class A {
+    final void show() { }
+}
+
+class B extends A {
+    void show() { }   // ❌ ERROR: cannot override final method
+}
+
+Used when you don’t want subclasses to change the behavior.
+
+3️⃣ final class → cannot be inherited
+
+final class A { }
+
+class B extends A { }  // ❌ ERROR: cannot extend final class
+
+
+Examples from Java: String, Integer, Math are final classes.
  */
