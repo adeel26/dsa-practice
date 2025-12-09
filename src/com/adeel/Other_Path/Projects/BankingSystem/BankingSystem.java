@@ -1,4 +1,4 @@
-package com.adeel.Other_Path.Projects;
+package com.adeel.Other_Path.Projects.BankingSystem;
 
 import java.util.Scanner;
 
