@@ -2,7 +2,7 @@ package com.adeel.Other_Path.Projects.DrawUserMatrix;
 
 import java.util.Scanner;
 
-public class DrawUserMatrix {
+public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
