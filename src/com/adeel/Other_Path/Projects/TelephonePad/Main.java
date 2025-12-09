@@ -1,6 +1,6 @@
-package com.adeel.Other_Path.Projects;
+package com.adeel.Other_Path.Projects.TelephonePad;
 
-public class TelephonePadMultiArray {
+public class Main {
     public static void main(String[] args) {
         char[][] telephone = {{'1', '2', '3'},
                 {'4', '5', '6'},
