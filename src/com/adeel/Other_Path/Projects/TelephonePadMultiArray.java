@@ -1,7 +1,4 @@
-package com.adeel.Questions;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
+package com.adeel.Other_Path.Projects;
 
 public class TelephonePadMultiArray {
     public static void main(String[] args) {
