@@ -32,6 +32,6 @@ public class Main {
         System.out.println(product2.getItem());
 
 
-        
+
     }
 }
